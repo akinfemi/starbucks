@@ -24,6 +24,7 @@ public class KeyPadPressTest
      */
     public KeyPadPressTest()
     {
+        
     }
 
     /**
@@ -42,9 +43,9 @@ public class KeyPadPressTest
     public void testOne()
     {
         // Press 1
-
+        kp.touch(1,1);
         // Assertion (Replace with appropriate test)
-        assertTrue( false );
+        assertTrue( kp.getKey(1,1).equals("X") );
     }
 
    @Test
